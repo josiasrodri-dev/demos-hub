@@ -1,0 +1,90 @@
+i.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+
+    background-color: currentColor;
+
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+
+}
+
+.usa-icon{
+    background-image: url("./assets/icons/usa-flat.svg");
+    mask-image: url("./assets/icons/usa-flat.svg");
+    -webkit-mask-image: url("./assets/icons/usa-flat.svg");
+}
+
+.mex-icon{
+    background-image: url("./assets/icons/mex-flat.svg");
+    mask-image: url("./assets/icons/mex-flat.svg");
+    -webkit-mask-image: url("./assets/icons/mex-flat.svg");
+}
+
+.html-icon{
+    mask-image: url("./assets/icons/html.svg");
+    -webkit-mask-image: url("./assets/icons/html.svg");
+}
+.css-icon{
+    mask-image: url("./assets/icons/css.svg");
+    -webkit-mask-image: url("./assets/icons/css.svg");
+}
+.js-icon{
+    mask-image: url("./assets/icons/js.svg");
+    -webkit-mask-image: url("./assets/icons/js.svg");
+}
+.boostrap-icon{
+    mask-image: url("./assets/icons/boostrap.svg");
+    -webkit-mask-image: url("./assets/icons/boostrap.svg");
+}
+.charts-icon{
+    mask-image: url("./assets/icons/charts.svg");
+    -webkit-mask-image: url("./assets/icons/charts.svg");
+}
+.php-icon{
+    mask-image: url("./assets/icons/php.svg");
+    -webkit-mask-image: url("./assets/icons/php.svg");
+}
+.laravel-icon{
+    mask-image: url("./assets/icons/laravel.svg");
+    -webkit-mask-image: url("./assets/icons/laravel.svg");
+}
+.csharp-icon{
+    mask-image: url("./assets/icons/csharp.svg");
+    -webkit-mask-image: url("./assets/icons/csharp.svg");
+}
+.windowsforms-icon{
+    mask-image: url("./assets/icons/windowsforms.svg");
+    -webkit-mask-image: url("./assets/icons/windowsforms.svg");
+}
+.net-icon{
+    mask-image: url("./assets/icons/net.svg");
+    -webkit-mask-image: url("./assets/icons/net.svg");
+}
+.java-icon{
+    mask-image: url("./assets/icons/java.svg");
+    -webkit-mask-image: url("./assets/icons/java.svg");
+}
+.mysql-icon{
+    mask-image: url("./assets/icons/mysql.svg");
+    -webkit-mask-image: url("./assets/icons/mysql.svg");
+}
+.sqlite-icon{
+    mask-image: url("./assets/icons/sqlite.svg");
+    -webkit-mask-image: url("./assets/icons/sqlite.svg");
+}
+.git-icon{
+    mask-image: url("./assets/icons/git.svg");
+    -webkit-mask-image: url("./assets/icons/git.svg");
+}
