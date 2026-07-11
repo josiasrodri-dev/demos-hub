@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+body{
+    background-image: url("../Pictures/welcome.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    border-radius: 30px;
+}
+form > input, select{
+    
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+form > input[type=submit]{
+    border: none;
+    background-color: #c3e4cd;
+    border-radius: 10px;
+}
+.ordenes{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.ordenespera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.521);
+}
+.ordenespera > h2{
+    padding: 10px;
+    font-size: 18px;
+}
+.ordenespera > h3{
+    padding: 10px;
+}
+.ordenespera > h4{
+    padding: 10px;
+}
+.ordenespera > a{
+    padding: 10px;
+    background-color: rgb(164, 216, 176);
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(65, 129, 80);
+}

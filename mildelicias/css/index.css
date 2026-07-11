@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Controladores generales */
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-order{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+
+.bodycontent {
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    border: none;
+}
+
+input[type=number]:focus {
+    border: none;
+    outline: none;
+}
+
+/* Inicio de estilos */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 140px;
+    margin: 0 10px;
+}
+
+.menu {
+    border: #a0a0a0 solid 2px;
+    border-radius: 50px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu>#search {
+    padding: 8px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+}
+
+.menu>button {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+}
+
+.menu>button:hover>i {
+    cursor: pointer;
+    color: #8a8a8a;
+}
+
+.menu>button>i {
+    font-size: 30px;
+    border: none;
+    color: #a0a0a0;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 130px;
+    margin-right: 10px;
+}
+
+#user,
+#car {
+    font-size: 36px;
+    color: #FEB69E;
+}
+
+#user:hover,
+#car:hover {
+    cursor: pointer;
+}
+
+#user {
+    color: rgb(136, 163, 127);
+}
+
+.userinfo {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 100px;
+    background-color: #dfdfdf;
+    padding: 20px;
+    border-radius: 10px;
+    border: #8a8a8a solid 2px;
+    display: none;
+}
+
+.userinfo>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Century Gothic;
+    padding: 10px;
+    color: #2d2d2d;
+}
+
+.userinfo>hr {
+    width: 100%;
+}
+
+.userinfo>a {
+    background-color: #f8a98f;
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #f85924;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
+
+.filter {
+    background-color: #ffeea9;
+    padding: 20px;
+}
+
+.filter>select {
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 18px;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+}
+
+.filter>input {
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+}
+
+.filter>input:hover {
+    cursor: pointer;
+    background-color: #dadada;
+}
+
+.content {
+    display: flex;
+    background-color: #c0c0c0bd;
+    margin: 20px 40px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    max-width: 40%;
+    min-width: 40%;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product>img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.desc {
+    width: 60%;
+    padding: 20px;
+}
+
+.desc>h2 {
+    font-size: 28px;
+    font-family: 'Segoe UI';
+}
+
+.desc>h3 {
+    font-size: 18px;
+    color: #919191;
+    font-family: 'Segoe UI';
+}
+
+.desc>p {
+    padding: 20px 0;
+    font-size: 16px;
+    font-family: Century Gothic;
+}
+
+.desc>.price {
+    height: auto;
+    font-size: 40px;
+    text-align: end;
+    padding: 0 20px;
+    font-family: Century Gothic;
+}
+
+.add {
+    display: flex;
+}
+
+.add>button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #f8a98f;
+    background-color: #f5c9bb;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+    margin: 0 20px;
+    transition: .25s;
+}
+
+.add>button:hover {
+    background-color: #f8a98f;
+    color: #f5c9bb;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.quantitys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background-color: rgb(154, 182, 145);
+    padding: 4px 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+}
+
+.quantitys>i {
+    color: rgb(121, 143, 114);
+    padding: 0px 6px;
+    font-size: 20px;
+}
+
+.quantitys>i:hover {
+    color: rgb(112, 131, 106);
+    cursor: pointer;
+}
+
+.quantitys>input {
+    width: 40px;
+    font-size: 20px;
+    font-family: Century Gothic;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(187, 214, 178);
+    border-radius: 5px;
+    color: rgb(136, 163, 127);
+    padding: 0 5px;
+}
+
+.Show {
+    display: flex;
+}
+
+.car {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.layout {
+    position: fixed;
+    background-color: #2d2d2d81;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carcontent {
+    background-color: #eeeeee;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+}
+
+.scrollmargin {
+    padding: 20px;
+    width: 70%;
+    height: 460px;
+    margin: 20px;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+}
+.emptycar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.emptycar > h2{
+    font-family: Century Gothic;
+    color: #91919198;
+}
+.producttable{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+.producttable::-webkit-scrollbar{
+width: 24px;
+}
+.producttable::-webkit-scrollbar-track{
+    margin: 10px;
+    background-color: #cccccc;
+    border-radius: 12px ;
+    
+}
+.producttable::-webkit-scrollbar-thumb{
+    background-color: #e0e0e0;
+    border: 4px solid #cccccc;
+    border-radius: 12px;
+    background-clip: content-box;
+    margin-right: 10px;
+    
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebebeb;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+}
+.products > img{
+    width: 100px;
+    border-radius: 5px;
+}
+.products > h2{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+.products > h3{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+.products > p{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 20px;
+}
+.total {
+    top: 0;
+    min-width: 30%;   
+    height: 100%;
+    margin: 20px;
+}
+.pay{
+    display: flex;
+    padding: 10px;
+}
+.pay > button, a{
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    font-family: Century Gothic;
+    font-weight: 600;
+    margin: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .2s;
+}
+.pay > button:hover, a:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(145, 148, 150, 0.76);
+    transition: .2s;
+}
+#Continue{
+    background-color: #ffeea9;
+    color: #caac34;
+}
+#Trash{
+    background-color: #f5c9bb;
+    color: #e75959;
+}
+#Order{
+    background-color: rgb(187, 214, 178);
+    color: rgb(112, 131, 106);
+}
+#Pay{
+    background-color: rgb(178, 209, 214);
+    color: rgb(106, 121, 131);
+}
+.details{
+    overflow-y: scroll;
+    max-height: 430px;
+}
+
+.precio, .cantidad{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .flex-order{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pay > button, a{
+        font-size: 12px;
+        display: flex;
+        gap :10px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
