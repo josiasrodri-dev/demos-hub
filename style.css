@@ -151,6 +151,20 @@ header > a:hover{
     padding: 16px 0;
 }
 
-@media(min-width: 768px){
+footer{
+    background-color: #1E2430;
+    border-radius: 999px;
+    padding: 16px 24px;
+    margin: 32px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    border: rgba(255,255,255,0.06) 3px solid;
+}
 
+.footer__socials{
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+}
+.footer__socials > a{
+    color: #F9F9F9;
 }
